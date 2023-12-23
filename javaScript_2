@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input placeholder="ussername" class="inp">
+        <input type="text" class="inp">
+        <input type="text" class="inp">
+        <input type="text" class="inp">
+        <input type="text" class="inp">
+        <button id="sub">submit</button>
+    </div>
+    <script>
+        document.getElementById("sub").onclick=function()
+        {
+           let v= document.getElementsByClassName("inp");
+        //    console.log(v.length)
+
+           for(i=0; i<v.length; i++)
+           {
+            // let a=v[i].value;
+            // console.log(v[i].value);
+           }
+        }
+        // for(let j of v)
+        // {
+        //     console.log(j)
+        // }
+        // query selector
+        document.querySelector("#sub").onclick=function()
+        {
+            let a=document.querySelectorAll(".input");
+            console.log(a);
+            let j;
+            for( j of a)
+            {
+                console.log(j);
+            }
+        }
+    </script>
+</body>
+</html>
