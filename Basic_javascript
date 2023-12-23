@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="s"> submit</button><br>
+    <input type="number" id="num">
+    <button id="nb"> enter the no.</button>
+
+    <script>
+        document.getElementById("s").onclick=function()
+          {
+        //   let a=document.getElementById("inp").value;
+        //   if(a>='a'&&a<='z')
+        //   {
+        //     console.log(" smaller alphabet")
+        //   }
+        //   else if(a>='A'&&a<='Z')
+        //   {
+        //     console.log("capital letter")
+        //   }
+        //   else if(a>=0)
+        //   {
+        //     console.log("digit")
+        //   }
+        //   else
+        //   {
+        //     console.log("special")
+        //   }
+        let b=document.getElementById("inp").value;
+
+        // table print
+        // for(let i=1; i<=10; i++)
+        // {
+        //     console.log(b*i)
+        // }
+
+        //   switch(b)
+        //   {
+        //     case 1:
+        //         console.log("Monday")
+        //         break;
+
+        //     case 2:
+        //         console.log("Tuesday")
+        //         break;
+                
+        //         case 3:
+        //         console.log("wednesday")
+        //         break;     
+        //   }
+
+        // reverse the number
+        let r=0;
+        let d=b
+        while(b!=0)
+        {
+            c=b%10;
+            r=r*10+c;
+            b=b/10;
+        }
+        console.log(r);
+//  palindromic number
+        // if(d==r)
+        // {
+        //     console.log("palindromic number")
+        // }
+        // else
+        // {
+        //     console.log(" not palindromic number")
+        // }
+
+//  fibonacci series
+
+
+//   let f=0;
+//   let g=1;
+//   console.log(f);
+//   console.log(g);
+
+//   for( i=1; i<=b; i++)
+//   {
+//     var a1=f+g;
+//     console.log(a1);
+//     f=g;
+//     g=a1;
+//   }
+        }
+            
+                </script>
+    
+</body>
+</html>
