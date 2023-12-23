@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <button id="f">mohit <input> <input type="submit"> </button>
+    <script>
+    // var a=12;
+    // var b=24;
+    // var c=(a%2==0) ?
+    //   "a" :"b"
+    //   console.log.("even"): console.log("even");
+    // var b=23;
+    //  switch(a)
+    //  {
+    //     case 1:
+    //         console.log("monday")
+    //         a%2==0? console.log("even") : console.log("odd")
+    //  }
+     var a;
+    // 
+    document.getElementById("f").onclick=function()
+    {
+        for( a=name; a<100; a++)
+        {
+        console.log(a);  
+        }
+    }
+      </script>
+</body>
+</html>
+
