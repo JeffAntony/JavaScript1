@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    .container{
+        display: flex;
+        justify-content: center;
+        border:2px solid red;
+
+
+    }
+    #clock{
+
+        font-size: 80px;
+        margin: 50px;
+        background-color: aqua;
+        border: 2px solid black;
+        letter-spacing: 10px;
+        padding:25px ;
+
+    }
+    #dg{
+        text-align: center;
+    }
+    #dig{
+       
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+    }
+    button{
+         padding:30px; 
+        margin:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* align-items: center; */
+        position: relative;
+        right:10px;
+        
+    }
+ </style>
+<body>
+
+   <div class="container">
+     
+    <div id="clock"> 
+        
+        <span id="hour">0</span>
+        <span id="minute">0</span>
+        <span id="second">0</span>
+
+       
+    </div>
+    <br>
+   
+    <div>
+        <button>start</button>
+    </div>
+             
+   </div>
+   <script>
+    //    setTimeout(startTime, 1000);
+    function startTime()
+    {
+
+    const today= new Date();
+      let hour= today.getHours();
+      let minute = today.getMinutes();
+      let second = today.getSeconds();
+
+              document.querySelector("#hour").innerText = hour + ":";
+              document.querySelector("#minute").innerText = minute + ":";
+              document.querySelector("#second").innerText = second;
+              setTimeout(startTime, 1000);
+
+    }
+    startTime();
+    
+   </script>
+   
+
+    
+</body>
+</html>
