@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // anonymous function
+        // (function(a,b)
+        // {
+        //     console.log("hello")
+        // }(12,56))
+        // let c =    (function(a,b)
+        // {
+        //     console.log("hello" +" "+(a+b))
+        // }(12,56))
+        // console.log(c);
+        // arrow function
+        // (()=>{
+        //     console.log("helklo")
+        // }) ()
+        // ((a,b)=>{
+        //     console.log(a+b)
+        // }) (12,2)
+        // ((b,c)=>{
+        //   console.log(b-c)
+        // }) (20,12)
+
+        // let v=((b,c)=>{
+        //   console.log(b*c)
+        // }) (20,12)
+
+        // console.log(v)
+
+        // ((d,e)=>{
+        //     console.log(d/e)
+        // })(200,20)
+
+        // ((a)=>{
+        // let v=a;
+        // let f=0;
+        // for(i=2; i<=v; i++)
+        // {
+        //  if(v%i==0)
+        //  {
+        //    f++;
+        //    break;
+        //  }
+        // }
+        // if(f==0)
+        // {
+        //     console.log("prime number")
+        // }
+        // if(f>1)
+        // {
+        //     console.log("not a prime number")
+        // }
+        // })(13)
+
+        // let ac = ((a) => {
+        //     let v = a;
+        //     let y = a;
+        //     let h = 0;
+        //     while (a > 0) 
+        //     {
+        //         g = a % 10;
+        //         h = g + h * 10;
+        //         a /= 10;
+        //     }
+        //     if (y == h) {
+        //         return "its palindromic number"
+        //     }
+        //     else {
+        //         return "not a palindromic number"
+        //     }
+
+        // })
+
+        // console.log(ac(121))
+
+        // let v=((a)=>
+        // {
+        //    if(a%2==0)
+        //    {
+        //     return "even"
+        //     console.log("even")
+        //    }
+        //    else
+        //    {
+        //      return "odd"
+        //     // console.log("odd")
+        //    }
+
+        // })
+        // v(12)
+        // console.log(v(13))
+
+        // let bc=((a,b)=>{
+
+        //     let lcm=0;
+        //     for(i=1; i<=a&&i<=b; i++)
+        //     {
+        //         if(a%i==0&&b%i==0)
+        //         {
+        //            lcm=i;
+        //         }
+        //     }
+        //        return a*b/lcm;
+        // })
+
+        // console.log(bc(12,6))
+
+        let de=((a,b,c)=>
+        {
+            if(a+b>=c&&b+c>=a&&a+c>=b)
+            {
+                return "valid triangle"
+            }
+            else{
+                return "not valid triangle"
+            }
+        })
+
+        console.log(de(10,10,15))
+    </script>
+</body>
+
+</html>
