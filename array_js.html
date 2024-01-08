@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=[10,35,545,5,54];
+        
+        // for(let i=0; i<x.length; i++)
+        // {
+        //     consoloe.log(x[i]);
+        // }
+
+        let y=[100,52,44,78,96,63];
+
+        // var s=0;
+
+        // for(let i=0; i<y.length; i++)
+        // {
+        //     s+=y[i];
+        // }
+        // // console.log(s);
+
+        // var g=0;
+        // for(let i=0; i<y.length; i++)
+        // {
+        //     if(y[i]>g)
+        //     {
+        //         g=y[i];
+        //     }
+        // }
+        // // console.log(g);
+
+        // let v=0;
+        // var g=0;
+        // var t=0;
+        // var h=0
+        // for(let j=0; j<y.length; j++)
+        // {
+        //     if(y[j]>g)
+        //     {
+        //         g=y[j];
+                
+    
+        //     }
+        // }
+
+        // for(let k=0; k<y.length; k++)
+        // {
+        //     if(y[k]>h&&y[k]<g)
+        //     {
+        //      h=y[k];
+             
+             
+        //     }
+        // }
+        // console.log(h);
+
+        var min=y[0];
+        var k=y[0];
+        
+       
+        for(let u=0; u<y.length; u++)
+        {
+            if(y[u]<min)
+            {
+                  min=y[u];
+            }
+
+        }
+        // console.log(min);
+        
+        for(let i=0; i<y.length; i++)
+        {
+            if(y[i]>min&&y[i]<k)
+            {
+               k=y[i];
+                // break;
+            }
+        }
+        console.log(k);
+
+        
+        
+
+       
+
+    </script>
+</body>
+</html>
