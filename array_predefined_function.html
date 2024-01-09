@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+<body>
+    <input id="inp" type="text" placeholder="Enter your friend's name">
+    <button id="add">add to array</button>
+    <button id="print">Print names</button>
+    <script>
+        let y=[100,52,44,78,96,63];
+        // [63,52,44,78,96,100];
+
+        let b=y.pop();
+        let c=y.shift();
+        y.unshift(b);
+        y.push(c);
+        // inserting first element in last and last in first positon
+        console.log(y);
+   
+ 
+    </script>
+</body>
+</html>
