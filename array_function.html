@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+<body>
+    <input id="inp" type="text" placeholder="Enter your friend's name">
+    <button id="add">add to array</button>
+    <button id="print">Print names</button>
+    <h1></h1> <!-- Added an h1 element to display names -->
+    <script>
+        let a = [];
+    
+        let d = document.querySelector('#add');
+        let e = document.querySelector("#print");
+        
+        d.onclick = () => {
+            let name = document.querySelector("#inp").value;
+            document.querySelector("#inp").value = "";
+            document.querySelector("#inp").focus();
+            a.push(name);
+        }
+
+        e.onclick = () => {
+            document.querySelector('h1').innerHTML = ""; // Clearing previous content
+            let i = 0;
+            let interval = setInterval(() => {
+                if (i > (a.length) - 1) {
+                    clearInterval(interval);
+                } else if (i > (a.length) - 2) {
+                    document.querySelector('h1').innerHTML += a[i];
+                } else {
+                    document.querySelector('h1').innerHTML += a[i] + " ,";
+                }
+                i++;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
