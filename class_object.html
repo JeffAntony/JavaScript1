@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let obj1={
+    //     name:"alby",
+    //     age:13,
+    //     city:"Indore",
+    //     pin_code:311603
+    //    }
+    //     let obj2={
+    //     name:"shyam",
+    //     age:33,
+    //     city:"Mumbai",
+    //     pin_code:514305
+
+    //     }
+    //     let obj3={
+    //     name:"shyam",
+    //     age:33,
+    //     city:"Mumbai",
+    //     pin_code:514305
+
+    //     }
+    //     let obj4={
+    //     name:"dhyan",
+    //     age:30,
+    //     city:"Mumbai",
+    //     pin_code:514305
+
+    //     }
+
+
+    //     let arr = [
+
+    //     {
+    //     name:"alby",
+    //     age:13,
+    //     city:"Indore",
+    //     pin_code:311603
+    //    },
+    //    {
+    //     name:"shyam",
+    //     age:33,
+    //     city:"Mumbai",
+    //     pin_code:514305
+
+    //     },
+    //     {
+    //         name:"dhyan",
+    //     age:30,
+    //     city:"Mumbai",
+    //     pin_code:514305
+    //     },
+    //     {
+    //         name:"hyan",
+    //     age:20,
+    //     city:"dumbai",
+    //     pin_code:515655
+    //     }
+    //     ];
+    //     // console.log(arr)
+
+    //     for(let i of arr)
+    //     {
+    //  console.log(i.name,i.city,i.pin_code)
+    //     }
+
+        // let c=arr.map(function(item)
+        // {
+        //     console.log(item.name,item.city)
+        // })
+
+        // arr.map(function(i)
+        // {
+        //     console.log(i.age)
+        // })
+
+        let ob2 =[
+
+         { name:"vimal",
+          age:34,
+          place:"Jaipur",
+          job:"Teacher"
+        },
+        {
+            name:"kamal",
+            age:15,
+            job:"student",
+            place:"kanpur"
+        },
+        {
+            name:"famal",
+            age:18,
+            job:"student",
+            place:"janpur"
+        }
+        ];
+
+        for(let j of ob2)
+        {
+            if(j.age<19)
+            {
+                // console.log(j);
+            }
+        }
+
+
+        let myobj3={
+            name:"John",
+            age:30,
+            cars:[
+                
+                    {  name:"Ford",models:["fiesta","focus","Mustang"]},
+                  
+                        { name:"BMW",models:["320","x3","x4"]},
+                   { name:"Fiat",models:["320","x3","x4"]}
+                        
+            ]
+        }
+              let ans = myobj3.cars.filter((item)=>
+              {
+                 return item.name =="BMW"
+              });
+
+              ans.map((item)=>
+              {
+                   console.log(item.name);
+                   item.models.map((d)=>
+                   {
+                    console.log(d);
+                   })
+
+              });
