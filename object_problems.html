@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const complexData = [
+          {
+            id: 1,
+            name: "John Doe",
+            age: 30,
+            address: {
+              street: "123 Main St",
+              city: "Anytown",
+              country: "USA",
+            },
+            orders: [
+              { orderId: "A123", amount: 50.75, status: "completed" },
+              { orderId: "B456", amount: 30.25, status: "pending" },
+            ],
+          },
+          {
+            id: 2,
+            name: "Jane Smith",
+            age: 25,
+            address: {
+              street: "456 Oak St",
+              city: "Othercity",
+              country: "USA",
+            },
+            orders: [
+              { orderId: "C789", amount: 100.5, status: "completed" },
+              { orderId: "D012", amount: 75.2, status: "completed" },
+            ],
+          },
+        ];
+
+        // filter users who are aged 25 or younger
+        // let ams = complexData.map(function(i)
+        // {
+        //      if(i.age=<25)
+        //      {
+        //         console.log(i.name)
+        //      }
+        // })
+
+        // Map the array to get an array of user names
+
+    //    let v=complexData.flat();
+
+        // let m = complexData.map((i)=>
+        // {
+        //  return i.name;
+        
+        // })
+        // console.log(m);
+
+        // filter the orders with an amount greater than 50
+
+        // let m =complexData.flat();
+        //  console.log(m);
+
+        // let b=m.map((i)=>
+        // {
+        //    i.orders.map((i)=>
+        //    {
+        //      i.filter((j)=>
+        //      {
+        //         return j>50
+        //      }
+        //      )
+        //    }) 
+        // })
+        // console.log(b);
+       
+        // m.map((i)=>
+        // {
+        //    let i.orders.map((i)=>
+        //    {
+             
+        //      {
+        //         return i.orderId;
+        //      }
+        //    }) 
+        // })
+        // console.log(b)
+// ___________________________________________________________________________________
+        // (1)  filter the array where the age <25
+        // let v= complexData.filter((i)=>
+        // {
+            
+        //     return i.age<=25;
+        // })
+        // console.log(v); 
+// __________________________________________________________________________________________
+        // (2)
+        //   Map the array to get an array of user names 
+        // let g = complexData.map((i)=>
+        // {
+        //   return i.name;
+        // })
+        // console.log(g)
+//  _________________________________________________________________________________________________               // 
+        
+        // (3) Filter the order with an amount greater than 50
+        
+        // let b = complexData.flatMap((i)=>
+        // {
+        //      return i.orders.map((j)=>
+        //      {
+        //         return j.amount >=50;
+        //      })
+        // })
+        // console.log(b);
+//__________________________________________________________________________________________________________________
+    //  (4) Map the array to get an array of orderIDs
+   
+    // let b = complexData.flatMap((i)=>
+    //     {
+    //          return i.orders.map((j)=>
+    //          {
+    //             return j.orderId;
+    //          })
+    //     })
+    //     console.log(b);
+    //  ___________________________________________________________________________________________________ 
+    </script>
+</body>
+</html>
